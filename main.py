@@ -166,7 +166,7 @@ def moreHandler(update: Update, context: CallbackContext):
         query.edit_message_text(text='\n'.join(_OPTION[ind]))
         context.user_data["index"] += 1
     else:
-        query.delete_message()
+        query.edit_message_text(text="")
 
 
 def main():
